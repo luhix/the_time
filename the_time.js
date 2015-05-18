@@ -46,7 +46,7 @@
 			minute=d.getMinutes(),
 			second=d.getSeconds(),
 			since=new Date();
-		since.setTime(Date.parse(year+'-01-01 00:00:00'));
+		since.setTime(Date.parse(year+'/01/01 00:00:00'));
 		return format.replace(new RegExp('Y|y|m|n|d|j|H|h|G|g|i|s|a|A|W|w|z|N','g'),function(flag){
 			switch(flag){
 				case 'Y':
